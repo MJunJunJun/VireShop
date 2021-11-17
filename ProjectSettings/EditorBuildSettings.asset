@@ -5,12 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Room.unity
-    guid: e542a70d8c27a7d409744f9ec3e30c73
   - enabled: 1
-    path: Assets/Scenes/GameScene.unity
-    guid: 5028188225fccb5438ae078855f2af86
+    path: Assets/Scene yang Digunakan/1. Splash.unity
+    guid: f392569b8c96bf242ae2e14311c1b61b
+  - enabled: 1
+    path: Assets/Scene yang Digunakan/2. Teleportation.unity
+    guid: 8e0cbb46c253b8a439f40a5067a53932
+  - enabled: 1
+    path: Assets/Scene yang Digunakan/3. Login.unity
+    guid: 73f0aa4d32b18de44a9dccf0e67ceac5
+  - enabled: 1
+    path: Assets/Scene yang Digunakan/4. Play.unity
+    guid: 89d9e92b859de004c8337bfee8fc18d5
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b3bc24ce3f7f3c44da66ec3501116b2c,
       type: 2}
