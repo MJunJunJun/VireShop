@@ -650,6 +650,14 @@
                     "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "UiSwitcher",
+                    "type": "Button",
+                    "id": "67d2a559-4911-4ba0-b7bb-0c561b8adc22",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -991,6 +999,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Trigger",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "13ea2b78-854b-485c-9a3d-99107dd18272",
+                    "path": "<XRController>{RightHand}/primaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UiSwitcher",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
