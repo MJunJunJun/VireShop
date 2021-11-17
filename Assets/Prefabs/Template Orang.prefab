@@ -77,7 +77,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7279604114631889884}
-  - component: {fileID: 7279604114631889887}
+  - component: {fileID: 1315282833}
   m_Layer: 0
   m_Name: RIghtHand Main
   m_TagString: Untagged
@@ -101,7 +101,7 @@ Transform:
   m_Father: {fileID: 7279604115895712393}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7279604114631889887
+--- !u!114 &1315282833
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7279604114631889885}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2e86141c95d85d47b568139b2fdbab1, type: 3}
+  m_Script: {fileID: 11500000, guid: d89c0e3fd8cefee4a889076173783163, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   UIController: {fileID: 7279604115927674553}
@@ -118,7 +118,7 @@ MonoBehaviour:
   inputActionReference_UISwitcher: {fileID: 7541287060587463375, guid: c348712bda248c246b8c49b3db54643f,
     type: 3}
   UICanvasGameobject: {fileID: 7279604115798101142}
-  positionOffsetForUICanvasGameobject: {x: 0, y: 1, z: 2}
+  positionOffsetForUICanvasGameobject: {x: 0, y: 1, z: 1}
 --- !u!114 &7279604115001787497
 MonoBehaviour:
   m_ObjectHideFlags: 0

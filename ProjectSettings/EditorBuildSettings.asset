@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scene yang Digunakan/2. Teleportation.unity
     guid: 8e0cbb46c253b8a439f40a5067a53932
   - enabled: 1
+    path: Assets/Scene game Viregra/3. Login 2.unity
+    guid: 38576cf84cb057b4d81bc4e0c58e8907
+  - enabled: 0
     path: Assets/Scene yang Digunakan/3. Login.unity
     guid: 73f0aa4d32b18de44a9dccf0e67ceac5
   - enabled: 1
