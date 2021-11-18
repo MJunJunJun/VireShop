@@ -658,6 +658,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "UiSwitcherBiasa",
+                    "type": "Button",
+                    "id": "93fb39a3-5627-440b-9a6a-ba97d09686d7",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -1010,6 +1018,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "UiSwitcher",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "5a36efa4-2142-4564-af01-1be76f0449d8",
+                    "path": "<XRController>{RightHand}/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "UiSwitcherBiasa",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

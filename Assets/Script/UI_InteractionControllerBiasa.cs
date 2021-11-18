@@ -6,8 +6,10 @@ using UnityEngine.InputSystem;
 using UnityEngine.Events;
 using System;
 
-public class UI_InteractionController : MonoBehaviour
+public class UI_InteractionControllerBiasa : MonoBehaviour
 {
+    public ManagementRightSwitcher managementRightSwitcher;
+    
     [SerializeField]
     GameObject UIController;
 
@@ -17,6 +19,9 @@ public class UI_InteractionController : MonoBehaviour
     [SerializeField]
     InputActionReference inputActionReference_UISwitcher;
 
+    //[SerializeField]
+    //InputActionReference inputActionReference_UISwitcher_Biasa;
+
     bool isUICanvasActive = false;
 
     [SerializeField]
@@ -25,7 +30,9 @@ public class UI_InteractionController : MonoBehaviour
     [SerializeField]
     Vector3 positionOffsetForUICanvasGameobject;
 
-   
+    public GameObject uiProfil;
+
+
 
     private void OnEnable()
     {
@@ -54,10 +61,10 @@ public class UI_InteractionController : MonoBehaviour
     /// <param name="obj"></param>
     private void ActivateUIMode(InputAction.CallbackContext obj)
     {
-        if (!isUICanvasActive)
+        if (!managementRightSwitcher.switcherModeOn)
         {
-            isUICanvasActive = true;
-
+            managementRightSwitcher.switcherModeOn = true;
+            uiProfil.SetActive(false);
             //Activating UI Controller by enabling its XR Ray Interactor and XR Interactor Line Visual
             UIController.GetComponent<XRRayInteractor>().enabled = true;
             UIController.GetComponent<XRInteractorLineVisual>().enabled = true;
@@ -77,8 +84,8 @@ public class UI_InteractionController : MonoBehaviour
         }
         else
         {
-            isUICanvasActive = false;
-
+            managementRightSwitcher.switcherModeOn = false;
+            uiProfil.SetActive(false);
             //De-Activating UI Controller by enabling its XR Ray Interactor and XR Interactor Line Visual
             UIController.GetComponent<XRRayInteractor>().enabled = false;
             UIController.GetComponent<XRInteractorLineVisual>().enabled = false;
