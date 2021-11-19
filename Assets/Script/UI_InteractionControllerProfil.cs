@@ -9,6 +9,7 @@ using System;
 public class UI_InteractionControllerProfil : MonoBehaviour
 {
     public ManagementRightSwitcher managementRightSwitcher;
+    public adaPetunjukTidak petunjukAktif;
 
     [SerializeField]
     GameObject UIController;
@@ -63,25 +64,28 @@ public class UI_InteractionControllerProfil : MonoBehaviour
     {
         if (!managementRightSwitcher.switcherModeOn)
         {
-            managementRightSwitcher.switcherModeOn = true;
-            uiProfil.SetActive(true);
+            if (!petunjukAktif.petunjukAktif)
+            {
+                managementRightSwitcher.switcherModeOn = true;
+                uiProfil.SetActive(true);
 
-            //Activating UI Controller by enabling its XR Ray Interactor and XR Interactor Line Visual
-            UIController.GetComponent<XRRayInteractor>().enabled = true;
-            UIController.GetComponent<XRInteractorLineVisual>().enabled = true;
+                //Activating UI Controller by enabling its XR Ray Interactor and XR Interactor Line Visual
+                UIController.GetComponent<XRRayInteractor>().enabled = true;
+                UIController.GetComponent<XRInteractorLineVisual>().enabled = true;
 
-            //Deactivating Base Controller by disabling its XR Direct Interactor
-            BaseController.GetComponent<XRDirectInteractor>().enabled = false;
+                //Deactivating Base Controller by disabling its XR Direct Interactor
+                BaseController.GetComponent<XRDirectInteractor>().enabled = false;
 
-            //Adjusting the transform of the UI Canvas Gameobject according to the VR Player transform
-            Vector3 positionVec = new Vector3(UIController.transform.position.x, positionOffsetForUICanvasGameobject.y, UIController.transform.position.z);
-            Vector3 directionVec = UIController.transform.forward;
-            directionVec.y = 0f;
-            UICanvasGameobject.transform.position = positionVec + positionOffsetForUICanvasGameobject.magnitude * directionVec;
-            UICanvasGameobject.transform.rotation = Quaternion.LookRotation(directionVec);
+                //Adjusting the transform of the UI Canvas Gameobject according to the VR Player transform
+                Vector3 positionVec = new Vector3(UIController.transform.position.x, positionOffsetForUICanvasGameobject.y, UIController.transform.position.z);
+                Vector3 directionVec = UIController.transform.forward;
+                directionVec.y = 0f;
+                UICanvasGameobject.transform.position = positionVec + positionOffsetForUICanvasGameobject.magnitude * directionVec;
+                UICanvasGameobject.transform.rotation = Quaternion.LookRotation(directionVec);
 
-            //Activating the UI Canvas Gameobject
-            UICanvasGameobject.SetActive(true);
+                //Activating the UI Canvas Gameobject
+                UICanvasGameobject.SetActive(true);
+            }
         }
         else
         {

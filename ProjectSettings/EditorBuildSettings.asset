@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Scene yang Digunakan/1. Splash.unity
     guid: f392569b8c96bf242ae2e14311c1b61b
   - enabled: 1
+    path: Assets/Scene yang Digunakan/2. Teleport.unity
+    guid: 5e5d72a2d0c848a4081bbec7db97d1a5
+  - enabled: 0
     path: Assets/Scene yang Digunakan/2. Teleportation.unity
     guid: 8e0cbb46c253b8a439f40a5067a53932
   - enabled: 1

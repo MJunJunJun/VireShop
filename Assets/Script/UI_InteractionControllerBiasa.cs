@@ -9,7 +9,8 @@ using System;
 public class UI_InteractionControllerBiasa : MonoBehaviour
 {
     public ManagementRightSwitcher managementRightSwitcher;
-    
+    public adaPetunjukTidak petunjukAktif;
+
     [SerializeField]
     GameObject UIController;
 
