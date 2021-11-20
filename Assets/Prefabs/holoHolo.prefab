@@ -336,7 +336,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7d92786507ab4848b3bf6ed78ed110e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8da45ff4f30305a4abb8b25b0f770aca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -389,7 +389,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9929503}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 441827732}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 836097318719191575}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &12609737
 GameObject:
   m_ObjectHideFlags: 0
@@ -786,7 +810,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2948a57cf30ddb4cbf81f80179dc85f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c529bc2c2f9d9d441813d61eea7517b6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1072,7 +1096,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: d16d300eb7e672443aef165e58aece0e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b0cdc9dbe8522a4795b3f33174f279e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1147,7 +1171,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2948a57cf30ddb4cbf81f80179dc85f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f67bce34b5293154fa7b5e8bf269313b, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1170,7 +1194,6 @@ GameObject:
   - component: {fileID: 441827738}
   - component: {fileID: 441827737}
   - component: {fileID: 441827736}
-  - component: {fileID: 441827735}
   - component: {fileID: 441827734}
   m_Layer: 0
   m_Name: Checkout Berhasil
@@ -1186,13 +1209,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 441827732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23000026}
   m_LocalScale: {x: 0.67521, y: 0.67521, z: 0.67521}
   m_Children:
   - {fileID: 1894286293}
-  m_Father: {fileID: 869427180248052928}
-  m_RootOrder: 6
+  m_Father: {fileID: 7578401658760449672}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1279,20 +1302,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &441827735
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 441827732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 3
 --- !u!114 &441827734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2438,7 +2447,6 @@ GameObject:
   - component: {fileID: 678235886}
   - component: {fileID: 678235885}
   - component: {fileID: 678235884}
-  - component: {fileID: 678235883}
   - component: {fileID: 678235882}
   m_Layer: 0
   m_Name: Pembayaran Berhasil
@@ -2446,7 +2454,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &678235881
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2454,13 +2462,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 678235880}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23000026}
   m_LocalScale: {x: 0.67521, y: 0.67521, z: 0.67521}
   m_Children:
   - {fileID: 1147463863}
-  m_Father: {fileID: 869427180248052928}
-  m_RootOrder: 5
+  m_Father: {fileID: 7578401658760449672}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2547,20 +2555,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &678235883
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 678235880}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 3
 --- !u!114 &678235882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3405,7 +3399,6 @@ GameObject:
   - component: {fileID: 774442376}
   - component: {fileID: 774442375}
   - component: {fileID: 774442374}
-  - component: {fileID: 774442373}
   - component: {fileID: 774442372}
   m_Layer: 0
   m_Name: Beli Langsung
@@ -3421,13 +3414,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 774442370}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23000026}
   m_LocalScale: {x: 0.67521, y: 0.67521, z: 0.67521}
   m_Children:
   - {fileID: 478648409}
-  m_Father: {fileID: 869427180248052928}
-  m_RootOrder: 4
+  m_Father: {fileID: 7578401658760449672}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3514,20 +3507,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &774442373
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 774442370}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 3
 --- !u!114 &774442372
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3554,6 +3533,7 @@ MonoBehaviour:
   textNamaToko: {fileID: 1849104214}
   textJumlah: {fileID: 722982413}
   textHargaProduk: {fileID: 834312555}
+  hargaProduk2: {fileID: 0}
   textOngkir: {fileID: 1726095903}
   textJumlahBayar: {fileID: 953085192}
   textJumlahBayar2: {fileID: 1984236306}
@@ -4447,7 +4427,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2948a57cf30ddb4cbf81f80179dc85f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a4ac827a18480ef41829cedae01d47cf, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4579,7 +4559,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1086340285}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 774442370}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 678235880}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1135749785
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,7 +4597,6 @@ GameObject:
   - component: {fileID: 1135749790}
   - component: {fileID: 1135749789}
   - component: {fileID: 1135749788}
-  - component: {fileID: 1135749787}
   - component: {fileID: 1135749792}
   m_Layer: 0
   m_Name: Deskripsi Produk
@@ -4609,13 +4612,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1135749785}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23000026}
   m_LocalScale: {x: 0.67521, y: 0.67521, z: 0.67521}
   m_Children:
   - {fileID: 992369256}
-  m_Father: {fileID: 869427180248052928}
-  m_RootOrder: 3
+  m_Father: {fileID: 7578401658760449672}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4702,20 +4705,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &1135749787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1135749785}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 3
 --- !u!114 &1135749792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4728,9 +4717,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca2b0a536e12f8a4ea894078a6225c54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namaProduk: Kursi Kayu Jepara
-  harga: 99
-  deskripsi: Cek
+  namaProduk: 'Set ruang tamu kotak '
+  harga: 20
+  deskripsi: 'Set ruang tamu yang terdiri dari 4 kursi dan 1 meja untuk ruang tamu
+    asli dari jepara produk lokal yang mendunia. Dibuat menggunakan kayu jati tua
+    sehingga kuat kokoh  '
   textNamaBarang: {fileID: 203592276}
   textHargaBarang: {fileID: 852887933}
   deskripsiProduk: {fileID: 1388185960}
@@ -4801,7 +4792,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b7d92786507ab4848b3bf6ed78ed110e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8da45ff4f30305a4abb8b25b0f770aca, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4854,7 +4845,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1146025237}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 678235880}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 836097318719191575}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1147463862
 GameObject:
   m_ObjectHideFlags: 0
@@ -6181,7 +6196,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1456656175}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1135749785}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 441827732}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!1 &1461642210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7303,7 +7342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a2948a57cf30ddb4cbf81f80179dc85f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5db0c51ee1270443916f112c247cd4f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8401,11 +8440,7 @@ Transform:
   m_Children:
   - {fileID: 6314292549577820442}
   - {fileID: 6204169597085549050}
-  - {fileID: 836097318719191574}
-  - {fileID: 1135749786}
-  - {fileID: 774442371}
-  - {fileID: 678235881}
-  - {fileID: 441827733}
+  - {fileID: 7578401658760449672}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8434,7 +8469,6 @@ GameObject:
   - component: {fileID: 836097318719191571}
   - component: {fileID: 836097318719191568}
   - component: {fileID: 836097318719191569}
-  - component: {fileID: 1722704776123298067}
   - component: {fileID: 268610993}
   m_Layer: 0
   m_Name: Info Menu
@@ -8442,7 +8476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &836097318719191574
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8450,13 +8484,13 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 836097318719191575}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.23}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.23000026}
   m_LocalScale: {x: 0.67521, y: 0.67521, z: 0.67521}
   m_Children:
   - {fileID: 2214433902394425099}
-  m_Father: {fileID: 869427180248052928}
-  m_RootOrder: 2
+  m_Father: {fileID: 7578401658760449672}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -8543,20 +8577,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RaycastTriggerInteraction: 1
---- !u!114 &1722704776123298067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 836097318719191575}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  speed: 3
 --- !u!114 &268610993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8569,8 +8589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6d5d30c6dc1bf4c951c176013975b5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namaProduk: Kursi Kayu Jepara
-  harga: 99
+  namaProduk: 'Set ruang tamu kotak '
+  harga: 20
   textNamaBarang: {fileID: 1119904481312616490}
   textHargaBarang: {fileID: 6374044098929414845}
 --- !u!1 &3047697435279709072
@@ -8631,14 +8651,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.8999224, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b14d1851e0fd3a84ea04e3bf98f23eb1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8d06b4742624aaa4cb546260ff65f334, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8706,14 +8726,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b14d1851e0fd3a84ea04e3bf98f23eb1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7b0cdc9dbe8522a4795b3f33174f279e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8950,7 +8970,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: xxx
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1c998eabd372cb42bab1e9d36572b57, type: 2}
   m_sharedMaterial: {fileID: -4353727632709800482, guid: c1c998eabd372cb42bab1e9d36572b57,
@@ -9020,6 +9040,56 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &6929387563531775280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7578401658760449672}
+  - component: {fileID: 6421514615057274073}
+  m_Layer: 0
+  m_Name: Rotate
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7578401658760449672
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929387563531775280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 836097318719191574}
+  - {fileID: 1135749786}
+  - {fileID: 774442371}
+  - {fileID: 678235881}
+  - {fileID: 441827733}
+  m_Father: {fileID: 869427180248052928}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6421514615057274073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6929387563531775280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1af5c3acdf2ec04886298576f47eea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  speed: 3
 --- !u!1 &7651751690845781976
 GameObject:
   m_ObjectHideFlags: 0
@@ -9085,7 +9155,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 99
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c1c998eabd372cb42bab1e9d36572b57, type: 2}
   m_sharedMaterial: {fileID: -4353727632709800482, guid: c1c998eabd372cb42bab1e9d36572b57,

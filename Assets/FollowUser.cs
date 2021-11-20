@@ -9,13 +9,16 @@ public class FollowUser : MonoBehaviour
 
     private void Start()
     {
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
     void Update()
     {
         Vector3 direction = player.position - transform.position;
+        direction.y=0 ;
         Quaternion rotation = Quaternion.LookRotation(direction);
         transform.rotation = Quaternion.Lerp(transform.rotation, rotation, speed * Time.deltaTime);
+        
     }
 }

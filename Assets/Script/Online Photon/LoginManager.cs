@@ -12,7 +12,8 @@ public class LoginManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.SetInt("coin", 999);
+        PlayerPrefs.SetString("username","Muhammad Junaedi");
     }
 
     // Update is called once per frame
@@ -27,6 +28,8 @@ public class LoginManager : MonoBehaviour
         {
             username= player_InputName.text;
             pasword = player_pasword.text;
+            PlayerPrefs.SetString("username", username);
+            PlayerPrefs.SetString("alamat", "Desa Kedondong Rt04/01 Kecamatan Sokaraja, Kabupaten Banyumas");
             /*getJsonUsername=> ambil data user name
             get data password=>untuk variabel lokal pasword
             jika dapatkan data json user. jika data user== password login
