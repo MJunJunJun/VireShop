@@ -10,6 +10,7 @@ public class UI_InteractionControllerProfil : MonoBehaviour
 {
     public ManagementRightSwitcher managementRightSwitcher;
     public adaPetunjukTidak petunjukAktif;
+    public bool aktifkanPetunjuk;
 
     [SerializeField]
     GameObject UIController;
@@ -46,7 +47,7 @@ public class UI_InteractionControllerProfil : MonoBehaviour
 
     private void Start()
     {
-
+        aktifkanPetunjuk = true;
         //Deactivating UI Canvas Gameobject by default
         UICanvasGameobject.SetActive(false);
         uiProfil.SetActive(false);
@@ -82,9 +83,9 @@ public class UI_InteractionControllerProfil : MonoBehaviour
             UICanvasGameobject.transform.position = positionVec + positionOffsetForUICanvasGameobject.magnitude * directionVec;
             UICanvasGameobject.transform.rotation = Quaternion.LookRotation(directionVec);
 
-            
 
-            if (!petunjukAktif.petunjukAktif)
+            UICanvasGameobject.SetActive(true);
+            if (aktifkanPetunjuk==false)
             {
                 //Activating the UI Canvas Gameobject
                 UICanvasGameobject.SetActive(true);

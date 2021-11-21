@@ -6,10 +6,12 @@ public class adaPetunjukTidak : MonoBehaviour
 {
     public bool petunjukAktif;
     public GameObject petunjuk,petunjukTerakhir;
+    public UI_InteractionControllerProfil profil;
     // Start is called before the first frame update
     private void Awake()
     {
         Debug.Log(PlayerPrefs.GetInt("petunjuk"));
+        PlayerPrefs.SetInt("petunjuk", 0);
         if (PlayerPrefs.GetInt("petunjuk") == 0)
         {
             petunjuk.SetActive(true);
@@ -20,8 +22,9 @@ public class adaPetunjukTidak : MonoBehaviour
             petunjuk.SetActive(false);
             petunjukAktif = false;
         }
+        PlayerPrefs.SetString("username", "Muhammad Junaedi");
         //untuk reset playerprefres
-        //PlayerPrefs.SetInt("petunjuk", 1);
+        
     }
     void Start()
     {
@@ -37,5 +40,11 @@ public class adaPetunjukTidak : MonoBehaviour
     {
         petunjukTerakhir.SetActive(false);
         PlayerPrefs.SetInt("petunjuk", 1);
+        petunjukAktif = false;
+    }
+
+    public void aksesUIInteraction()
+    {
+        profil.aktifkanPetunjuk = false;
     }
 }

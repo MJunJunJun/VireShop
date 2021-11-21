@@ -2,11 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class LoginManager : MonoBehaviour
 {
     public string namaSceneHome;
     public TMP_InputField player_InputName,player_pasword;
     string username, pasword;
+    public int loadScene;
 
     #region Unity Metyhod
     // Start is called before the first frame update
@@ -30,6 +32,7 @@ public class LoginManager : MonoBehaviour
             pasword = player_pasword.text;
             PlayerPrefs.SetString("username", username);
             PlayerPrefs.SetString("alamat", "Desa Kedondong Rt04/01 Kecamatan Sokaraja, Kabupaten Banyumas");
+            SceneManager.LoadScene(loadScene);
             /*getJsonUsername=> ambil data user name
             get data password=>untuk variabel lokal pasword
             jika dapatkan data json user. jika data user== password login
